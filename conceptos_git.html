@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT y GitHub: Conceptos GIT</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="#">Conceptos</a>
+                    <ul class="submenu">
+                        <li><a href="conceptos_git.html">GIT</a></li>
+                        <li><a href="conceptos_ghub.html">GITHUB</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos</a>
+                    <ul class="submenu">
+                        <li><a href="multimedia.html">Multimedia</a></li>
+                        <li><a href="podcast.html">Podcasts</a></li>
+                    </ul>
+                </li>
+                <li><a href="autoevaluacion.html">Autoevaluación</a></li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </nav>
+    </h1>
+        <br><br><br><br>
+        <h2>
+            CONCEPTOS: GIT
+        </h2>
+                <h5>
+                    <img src="imagenes/git.png" alt="git">
+                </h5>
+            <h3>Repositorio GIT:</h3>
+                <P>
+                    Es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.
+                </P>
+            <h3>Inicio de un nuevo repositorio:</h3>
+                <p>
+                    Para crear un nuevo repositorio, usa el comando git init. git init es un comando que se utiliza una sola vez durante la configuración inicial de un repositorio nuevo. Al ejecutar este comando, se creará un nuevo subdirectorio .git en tu directorio de trabajo actual. También se creará una nueva rama maestra.
+                </p>
+                    <h5>
+                        <img src="imagenes/clon.png" alt="clon">
+                    </h5>
+            <h3>Clonación de un repositorio existente:</h3>
+                <P>
+                    Si un repositorio ya se ha configurado en un repositorio central, el comando de clonación es la manera más común de obtener una copia de desarrollo local. Igual que git init, la clonación suele ser una operación única. Una vez que un desarrollador ha obtenido una copia de trabajo, todas las operaciones de control de versiones se administran por medio de su repositorio local.
+                </P>
+            <h3>Add & Commit:</h3>
+                <p>
+                    Puedes registrar cambios (añadirlos al Index) usando git add <filename> git add. Este es el primer paso en el flujo de trabajo básico. Para hacer commit a estos cambios usa git commit -m "Commit message". Ahora el archivo esta incluído en el HEAD, pero aún no en tu repositorio remoto.
+                </p>
+            <h3>Flujos de trabajo distribuidos:</h3>
+                <P>
+                    A diferencia de los Sistemas Centralizados de Control de Versiones (CVCSs, Centralized Version Control Systems), la naturaleza distribuida de Git te permite mucha más flexibilidad en la manera de colaborar en proyectos. En los sistemas centralizados, cada desarrollador es un nodo de trabajo más o menos en igualdad con un repositorio central. En Git, sin embargo, cada desarrollador es potencialmente un nodo o un repositorio - es decir, cada desarrollador puede contribuir a otros repositorios y mantener un repositorio público en el cual otros pueden basar su trabajo y al cual pueden contribuir.
+                </P>
+                    <h5>
+                        <img src="imagenes/rama.png" alt="rama">
+                    </h5>
+                <h3>Ramas:</h3>
+                <p>
+                    Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama "por defecto" cuando creas un repositorio. Crea nuevas ramas durante el desarrollo y fusiónalas a la rama principal cuando termines.
+                </p>
+            <h3>Actualizar repositorio:</h3>
+                <P>
+                    Para actualizar tu repositorio local al commit más nuevo, ejecuta git pull en tu directorio de trabajo para bajar y fusionar los cambios remotos. Para fusionar otra rama a tu rama activa (por ejemplo master), utiliza git merge <branch> en ambos casos git intentará fusionar automáticamente los cambios.
+                </P>
+                    <h5>
+                        <img src="imagenes/etiqueta.png" alt="etiqueta">
+                    </h5>
+            <h3>Etiquetas:</h3>
+                <p>
+                    Se recomienda crear etiquetas para cada nueva versión publicada de un software. Este concepto no es nuevo, ya que estaba disponible en SVN. Puedes crear una nueva etiqueta llamada 1.0.0 ejecutando.
+                </p>
+                <br>                
+            <h3>Referencias bibliográficas</h3>
+                <p>
+                    Configuración de un repositorio. Atlassian. Recuperado de https://www.atlassian.com/es/git/tutorials/setting-up-a-repository
+                </p>
+                <p>
+                    Dudler, R. Git – La guía sencilla. Recuperado de https://rogerdudler.github.io/git-guide/index.es.html   
+                </p>
+                <p>
+                    Git en entornos distribuidos - Flujos de trabajo distribuidos. (s.f.) Git-scm. Recuperado de https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Flujos-de-trabajo-distribuidos 
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+        
+</body>
+</html>
